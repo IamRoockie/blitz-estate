@@ -1,0 +1,528 @@
+@media (max-width: 1200px) {
+	.services__inner {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.apartments__info {
+		flex-direction: column;
+		align-items   : flex-start;
+	}
+
+	.about {
+		padding: 65px 100px;
+
+		&__inner {
+			display: block;
+		}
+
+		&__title {
+			text-align: center;
+		}
+
+		&__text {
+			text-align: justify;
+		}
+
+		&__btn {
+			display: block;
+			margin : 30px auto;
+			padding: 16px 30px;
+		}
+
+		&__images {
+			display        : flex;
+			justify-content: center;
+			gap            : 10px;
+			margin         : 0 auto;
+		}
+
+		&__img {
+			min-width: 130px;
+		}
+
+		&__images-small {
+			margin        : 0;
+			flex-direction: column;
+		}
+	}
+
+	.directions__img-box {
+		width: 120px;
+	}
+
+	.supervisor__info {
+		max-width: 500px;
+	}
+
+	.footer {
+		&__inner {
+			display        : flex;
+			justify-content: space-between;
+		}
+
+		&__info {
+			max-width: 350px;
+		}
+
+		&__logo {
+			width: auto;
+
+			.logo__text {
+				display: none;
+			}
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+	.menu-hamburger__name {
+		display: none;
+	}
+
+	.header {
+		&__top {
+			display        : flex;
+			justify-content: space-between;
+		}
+
+		&__phone {
+			font-size: 25px;
+		}
+
+		&__title {
+			font-size: 40px;
+		}
+
+		&__subtitle {
+			font-size: 20px;
+		}
+
+		&__num {
+			font-size: 60px;
+		}
+	}
+
+	.test {
+		&__content {
+			flex-direction: column;
+		}
+
+		&__services {
+			border-top     : 3px solid $grey;
+			border-left    : none;
+			max-width      : 100%;
+			display        : flex;
+			justify-content: space-between;
+			gap            : 30px;
+		}
+
+		&__service {
+			width: calc(100%/3);
+
+			&:not(:first-child) {
+				margin: 0;
+			}
+		}
+	}
+
+	.directions {
+		&__phone {
+			font-size: 20px;
+		}
+
+		&__img-box {
+			width: 100px;
+		}
+	}
+
+	.supervisor {
+		&__title {
+			text-align: center;
+		}
+
+		&__info {
+			max-width : 550px;
+			margin    : 0 auto;
+			text-align: justify;
+		}
+
+		&__img {
+			display: none;
+		}
+
+		&__btn {
+			display: block;
+			margin : 30px auto 0;
+		}
+	}
+
+	.footer {
+		&__info {
+			max-width: 250px;
+		}
+
+		&__contact {
+			justify-content: center;
+		}
+
+		&__phone {
+			font-size: 25px;
+		}
+
+		&__email {
+			font-size: 20px;
+		}
+
+		&__btn {
+			padding: 16px 30px;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.title {
+		font-size: 28px;
+	}
+
+	.subtitle {
+		font-size: 16px;
+	}
+
+	.menu-hamburger__inner {
+		width: auto;
+	}
+
+	.menu {
+		overflow-y: scroll;
+
+		&__link {
+			padding  : 10px 0;
+			font-size: 16px;
+		}
+	}
+
+	.modal {
+		padding: 15px;
+
+		&__content {
+			padding: 30px;
+		}
+
+		&__btn {
+			padding: 10px 0;
+		}
+
+		&__close {
+			width: 30px;
+		}
+	}
+
+	.logo {
+		width: auto;
+
+		&__img {
+			width: 110px;
+		}
+
+		&__text {
+			display: none;
+		}
+	}
+
+	.header {
+		&__title {
+			font-size: 30px;
+		}
+
+		&__subtitle {
+			font-size: 18px;
+		}
+
+		&__stats {
+			display: none;
+		}
+
+		&__phone {
+			font-size: 16px;
+		}
+
+		&__call-btn {
+			padding  : 10px;
+			width    : 100%;
+			font-size: 14px;
+		}
+	}
+
+	.test {
+		&__services {
+			flex-direction: column;
+			align-items   : center;
+		}
+
+		&__service {
+			width: 100%;
+		}
+	}
+
+	.services {
+		&__inner {
+			grid-auto-rows: 250px;
+		}
+
+		&__title {
+			font-size: 17px;
+		}
+
+		&__box {
+			bottom: 40px;
+		}
+
+		&__desc {
+			font-size: 14px;
+		}
+
+		&__btn {
+			padding  : 5px;
+			font-size: 14px;
+		}
+	}
+
+	.apartments {
+		&__tab {
+			padding  : 10px 0;
+			font-size: 14px;
+		}
+
+		&__list {
+			gap: 15px;
+		}
+
+		&__content {
+			font-size: 14px;
+		}
+
+		&__img {
+			height: 250px;
+		}
+
+		&__title {
+			font-size: 20px;
+		}
+
+		&__price {
+			font-size: 30px;
+		}
+	}
+
+	.about {
+		padding: 30px 0;
+	}
+
+	.directions {
+		&__list {
+			gap: 15px;
+		}
+
+		&__item {
+			padding  : 15px 30px;
+			font-size: 14px;
+		}
+
+		&__phone {
+			margin-top: 10px;
+			font-size : 18px;
+		}
+
+		&__heading {
+			font-size: 16px;
+		}
+
+		&__content {
+			margin-top: 0;
+		}
+
+		&__img-box {
+			display: none;
+		}
+	}
+
+	.footer {
+		padding: 20px 15px;
+
+		&__logo {
+			display: none;
+		}
+
+		&__work-time {
+			font-size: 12px;
+		}
+
+		&__time {
+			margin-top: 3px;
+		}
+
+		&__address {
+			font-size  : 12px;
+			line-height: 1.5;
+		}
+
+		&__phone {
+			font-size: 17px;
+		}
+
+		&__email {
+			font-size: 15px;
+		}
+
+		&__btn {
+			padding: 10px 0;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.title {
+		font-size: 24px;
+	}
+
+	.subtitle {
+		font-size: 16px;
+	}
+
+	.modal {
+		font-size: 14px;
+
+		&__close {
+			right: 15px;
+			top  : 25px;
+		}
+
+		&__content {
+			padding: 15px;
+		}
+
+		&__text {
+			font-size: 20px;
+		}
+
+		&__form {
+			width     : 60%;
+			margin-top: 10px;
+		}
+
+		&__label {
+			font-size: 14px;
+		}
+
+		&__input {
+			margin-top: 0;
+
+			&::placeholder {
+				font-size: 14px;
+			}
+		}
+
+		&__btn {
+			margin: 0;
+		}
+	}
+
+	.header {
+		padding: 20px 0;
+
+		&__call {
+			display: none;
+		}
+
+		&__title {
+			font-size: 22px;
+		}
+
+		&__subtitle {
+			margin-top: 10px;
+			font-size : 16px;
+		}
+
+		&__gift {
+			font-size: 14px;
+		}
+
+		&__btn {
+			padding   : 15px 0;
+			width     : 80%;
+			display   : block;
+			margin    : 20px auto;
+			text-align: center;
+		}
+	}
+
+	.test {
+		&__questions {
+			padding: 15px;
+		}
+
+		&__question {
+			font-size: 20px;
+		}
+
+		&__select {
+			padding-bottom: 15px;
+		}
+
+		&__select-img {
+			height: 120px;
+		}
+
+		&__services {
+			padding: 20px;
+		}
+
+		&__service {
+			font-size: 14px;
+		}
+	}
+
+	.services {
+		display: none;
+	}
+
+	.apartments {
+		&__list {
+			grid-template-columns: auto;
+		}
+	}
+
+	.about {
+		&__images {
+			flex-direction: column;
+		}
+
+		&__images-small {
+			flex-direction : row;
+			flex-wrap      : wrap;
+			row-gap        : 10px;
+			justify-content: center;
+		}
+
+		&__btn {
+			padding: 10px 0;
+		}
+	}
+
+	.directions {
+		&__list {
+			grid-template-columns: auto;
+		}
+	}
+
+	.footer {
+		&__contact {
+			display: none;
+		}
+
+		&__info {
+			max-width : 100%;
+			text-align: center;
+		}
+	}
+}
